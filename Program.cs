@@ -41,3 +41,12 @@ for (int i = 0; i < muppetList.Count; i++)
     }
 }
 Console.WriteLine();
+
+Console.WriteLine("/n--- Extracting Strings ---");
+Console.WriteLine($"The first string is " + muppetList[0]);
+Console.WriteLine($"The last string is " + muppetList[^1]);
+Console.WriteLine($"The last string is " + muppetList[^2]);
+Console.Write($"The slice of the strings in position 5 and 6 are: ");
+muppetList[5..7].ForEach(x => Console.WriteLine(x));
+
+Console.WriteLine("/n--- Dictionary ---");
